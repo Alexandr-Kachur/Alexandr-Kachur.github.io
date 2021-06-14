@@ -1,0 +1,50 @@
+.about {
+    &__content {
+        text-align: center;
+        color: rgb(0, 0, 0);
+    }
+    &__title {
+        padding-top: 95px;
+
+        font-size: 44px;
+        line-height: 70px;
+    }
+    &__text {
+        padding-top: 22px;
+        padding-bottom: 28px;
+
+        font-size: 18px;
+        line-height: 33px;
+    }
+    &__link {
+        text-transform: uppercase;
+
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 15px;
+        cursor: pointer;
+    }
+
+    &__row {
+        padding-top: 64px;
+        padding-bottom: 47px;
+        @include desktop-l {
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    }
+    &__item {
+        cursor: pointer;
+    }
+    &__image {
+        transition: .15s;
+        &:hover {
+            box-shadow: 0 0 30px rgba(7, 7, 7, 0.692);
+            transform: translateY(-5px) scale(1.025);
+        }
+        @include desktop-l {
+            height: 250px;
+        }
+    }
+}

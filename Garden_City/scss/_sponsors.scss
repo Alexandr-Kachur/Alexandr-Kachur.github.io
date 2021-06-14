@@ -1,0 +1,28 @@
+/* Sponsors  */
+.sponsors {
+    background-color: rgba(123, 164, 219, 1);
+    height: 69px;
+    width: 100%;
+    justify-content: space-evenly;
+    &__item {}
+    &__image {
+        padding-left: 40px;
+        padding-right: 44px;
+        padding-top: 15px;
+        padding-bottom: 19px;
+        @include desktop-s {
+            padding-left: 0;
+        }
+    }
+    &__text {
+        text-transform: uppercase;
+        color: rgba(23, 28, 143, 1);
+        font-size: 14px;
+        line-height: 15px;
+        letter-spacing: 2.24px;
+
+        padding-top: 24px;
+        padding-bottom: 28px;
+    }
+}
+/* / Sponsors  */

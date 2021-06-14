@@ -1,0 +1,760 @@
+/*fonts*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script:400,700&display=swap");
+@import "themify-icons.css";
+@import "flickity.min.css";
+
+/*=== Main ===*/
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+    color: #000;
+    background: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #000;
+    font-weight: 700;
+}
+
+a {
+    -webkit-transition: all 300ms ease-in-out;
+            transition: all 300ms ease-in-out;
+    color: #000;
+    text-decoration: none;
+    background-color: transparent;
+
+}
+
+a:hover {
+    color: #ff5353;
+    text-decoration: none;
+    outline: 0;
+}
+
+span{
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    color: #000;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+span:hover {
+    color: #ff5353;
+    text-decoration: none;
+    outline: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure {
+    margin: 0;
+}
+
+section {
+    display: block;
+    position: relative;
+    padding: 50px 0;
+    width: 100%;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.icon {
+    color: #000;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.icon:hover {
+    color: #ff5353;
+}
+
+.btn, .btn-default {
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: .8;
+    text-transform: capitalize;
+    min-width: 170px;
+    padding: 20px 25px;
+}
+
+.btn-default {
+    background: 3px #ff5353;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.btn-default:hover {
+    background: #fff;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, .05);
+}
+
+.btn-round {
+    border-radius: 50px;
+}
+
+.btn-outline {
+    border: 2px solid #fff;
+}
+
+.btn:focus, .btn-default:focus {
+    box-shadow: none;
+}
+
+.btn.icon-left i, .icon-left.btn-default i {
+    line-height: .8;
+    margin-right: 20px;
+}
+
+.sec-heading {
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.sec-heading .sec-title {
+    height: 43px;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.pointer {
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    color: #000;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/*=== Header ===*/
+.top-header {
+    background: #FEF7F6;
+    padding: 10px 0;
+}
+
+.top-header span {
+    display: inline-block;
+    position: relative;
+    color: #000;
+    font-size: 11px;
+    font-weight: 300;
+}
+
+.top-header span:not(:last-child) {
+    padding-right: 15px;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.row-right {
+    text-align: right!important;
+}
+
+.col {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+
+.lang {
+    display: inline-flex!important;
+}
+
+.lang-drop {
+    display: none;
+}
+
+/*=== Navbar ===*/
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar ul li {
+    display: block;
+    padding: 12px 10px;
+}
+
+.nav-links {
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+    flex-direction: row;
+}
+
+.nav-links li a {
+    display: block;
+    padding: 40px 15px;
+    line-height: .8;
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.navbar .icon {
+    position: relative;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.item-count {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    top: 0;
+    right: 0;
+    text-align: center;
+    line-height: 16px;
+    font-size: 8px;
+    font-weight: 400;
+    color: #fff;
+    background: #ff5353;
+    border-radius: 50%;
+}
+
+/*=== Banner section ===*/
+.banner, .banner02 {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.align-items-center {
+    align-items: center!important;
+}
+
+.banner .banner-content, .banner02 .banner-content {
+    width: 100%;
+    text-align: center;
+}
+
+.banner .banner-content .tag-line, .banner02 .banner-content .tag-line {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.tag-line {
+    display: inline-block;
+    margin-bottom: 0;
+    color: #565656;
+    font-weight: 500;
+    line-height: .8;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+}
+
+.banner .banner-content h1, .banner02 .banner-content h1 {
+    font-weight: 500;
+    font-size: 58px;
+    line-height: 70px;
+    margin-bottom: 45px;
+}
+
+/*=== Featured product ===*/
+.product-item {
+    position: relative;
+}
+
+.product-item .product-thumb {
+    display: block;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.product-item .product-content {
+    text-align: center;
+}
+
+.product-item .product-content .product-name {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #888;
+    text-transform: capitalize;
+}
+
+.product-item .product-content .product-name span {
+    color: #888;
+}
+
+.product-item .product-content .product-name span:hover {
+    color: #ff5353;
+}
+
+.product-item .product-content .price {
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
+
+.product-item:hover .actions-link {
+    opacity: 1;
+    visibility: visible;
+}
+
+.product-item:hover .actions-link .icon:first-child {
+    -webkit-animation: fadeInUp 200ms;
+            animation: fadeInUp 200ms;
+}
+
+.product-item:hover .actions-link .icon:nth-child(2) {
+    -webkit-animation: fadeInUp 400ms;
+            animation: fadeInUp 400ms;
+}
+
+.product-item:hover .actions-link .icon:last-child {
+    -webkit-animation: fadeInUp 600ms;
+            animation: fadeInUp 600ms;
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        -webkit-transform: translateY(30px);
+                transform: translateY(30px);
+    }
+    to {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+       -webkit-transform: translateY(30px);
+               transform: translateY(30px);
+    }
+    to {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+
+.actions-link {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.actions-link .icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+}
+
+.actions-link .icon:hover {
+    background-color: #ff5353;
+    color: #fff;
+}
+
+.rating a {
+    display: inline-block;
+    font-size: 13px;
+    color: #ff5353;
+}
+
+/*=== Banner_02 ===*/
+.banner02 {
+    background: #eae2d8;
+}
+
+.banner02 .banner-content h1 {
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 33px;
+}
+
+.banner02 .banner-content h4 {
+    font-weight: 300;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 54px;
+}
+
+/*=== Most popular ===*/
+.product-carousel {
+    max-width: 1200px;
+}
+
+.carouse-cell {
+    margin: 0 15px 200px 15px ;
+    width: 263px;
+    height: 338px;
+    cursor: default;
+    counter-increment: gallery-cell;
+}
+
+.flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    background: #C5B5A1;
+    opacity: 1;
+}
+.flickity-page-dots .dot.is-selected {
+    background: #ff5353;
+}
+
+/*=== Features section ===*/
+.featured-cont {
+    position: relative;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid #EBEEF0;
+}
+
+.featured-cont .feat-icon {
+    max-width: 56px;
+    margin: 0 auto 27px;
+}
+
+.featured-cont h5 {
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.featured-cont p {
+    color: #888;
+    line-height: 18px;
+    margin-bottom: 0;
+}
+
+.trending-products .col-trend {
+    flex: 0 0 25%;
+    max-width: 25%;
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*=== Fallow section ===*/
+.col-fallow {
+    flex: 0 0 25%;
+    max-width: 25%;
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.instagram a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.instagram a:before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 83, 83, .7);
+    height: 100%;
+    width: 100%;
+    -webkit-transition: all 300ms ease;
+            transition: all 300ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.instagram a i {
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate( -50%, -50%);
+            transform: translate( -50%, -50%);
+    -webkit-transition: all 300ms ease;
+            transition: all 300ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.instagram a:hover i {
+    opacity: 1;
+    visibility: visible;
+}
+
+.instagram a:hover::before {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+/*=== Footer ===*/
+footer {
+    background: #E8E0D6;
+}
+
+.footer-top {
+    padding: 80px 15px;
+    border-bottom: 1px solid #E8E0D7;
+}
+
+.widget {
+    position: relative;
+}
+
+footer .widget .widget-title {
+    margin-bottom: 25px;
+}
+
+.widget .widget-title {
+    font-size: 16px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.widget-nav li a {
+    font-size: 14px;
+    color: #888;
+    line-height: 30px;
+}
+
+.widget-nav li a:hover {
+    color: #ff5353;
+}
+
+.app-btn {
+    -webkit-box-align: center;
+    display: -webkit-box;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d6d8d9;
+    padding-bottom: 30px;
+}
+
+.app-btn a {
+    flex-basis: 49%;
+    padding: 12px 5px 10px 35px;
+    border-radius: 5px;
+    background: #fff;
+    position: relative;
+}
+
+.app-btn a i {
+    color: #ff5353;
+    font-size: 20px;
+    margin-right: 5px;
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    transform: translateY( -50% );
+}
+
+.app-btn a p {
+    margin-bottom: 0;
+    color: #000;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: .8;
+    text-transform: uppercase;
+}
+
+.app-btn a p span {
+    display: block;
+    font-size: 10px;
+    font-weight: 400;
+    color: #4a4a4a;
+    line-height: .8;
+    margin-bottom: 5px;
+}
+
+.app-btn a:hover, .app-btn a.app-store {
+    background: #ff5353;
+}
+
+.app-btn a:hover p, .app-btn a:hover span, .app-btn a:hover i,
+.app-btn a.app-store p, .app-btn a.app-store span, .app-btn a.app-store i {
+    color: #fff;
+}
+
+footer .copyright {
+    padding: 20px 0;
+    text-align: center;
+    color: #888;
+    margin-bottom: 0;
+}
+
+.copyright a {
+    color: #ff5353;
+}
+
+.copyright a:active  {
+    color: #888;
+}
+
+.social-media a:not(:last-child) {
+    margin-right: 10px;
+}
+
+.widget-social .social-media a {
+    background: #fff;
+    line-height: 32px;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+}
+
+.social-media a {
+    display: inline-block;
+    font-size: 14px;
+    color: #000;
+}
+
+.social-media a:hover {
+    color: #fff;
+    background: #ff5353;
+}
+
+/*=== Mobile menu toggler ===*/
+.toggle-mnu {
+    display: block;
+    width: 20px;
+    height: 28px;
+    margin: 10px 8px 0 auto;
+}
+.toggle-mnu span:after, .toggle-mnu span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+}
+.toggle-mnu span:after {
+    top: 12px;
+}
+.toggle-mnu span {
+    position: relative;
+    display: block;
+}
+.toggle-mnu span, .toggle-mnu span:after, .toggle-mnu span:before {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    border-radius: 2px;
+}
+.toggle-mnu.on span {
+    background-color: transparent;
+}
+.toggle-mnu.on span:before {
+    transform: rotate( 45deg ) translate( -1px, 1px );
+}
+.toggle-mnu.on span:after {
+    transform: rotate( -45deg ) translate( 3px, -6px );
+}
+/*=== ButtonToUp ===*/
+#btn-to-top {
+    position: fixed;
+    float: right;
+    bottom: 40px;
+    right: 40px;
+    height: 60px;
+    width: 60px;
+    background: #ff5353;
+    border-radius: 50%;
+    border: none;
+    outline: inherit;
+    opacity: .5;
+    transition: all 400ms ease;
+    cursor: pointer;
+    z-index: 2;
+}
+#btn-to-top:hover {
+    transition: all 400ms ease;
+    opacity: 1;
+}
+#btn-to-top i {
+    color: #fff;
+    font-size: 20px;
+
+}
+
+/*=== Plug ===*/
+.block {
+    position: relative;
+    height: 77px;
+    width: 100%;
+    display: none;
+}

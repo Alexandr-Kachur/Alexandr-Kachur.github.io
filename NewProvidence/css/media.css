@@ -1,0 +1,301 @@
+/*=== Laptop ===*/
+@media all and (max-width: 1200px) {
+    .container {
+        margin: 0 40px
+    }
+
+    .banner .container p {
+        margin: 0 50px;
+    }
+
+    .row > .block-left {
+        width: 400px;
+    }
+    .row > .block-right {
+        width: 400px;
+        z-index: 9;
+    }
+
+    .plan .row .block-left {
+        width: auto;
+    }
+
+    li .main-img {
+        margin: 50px 86.333%;
+    }
+
+    .footer-top .container .block-right {
+        width: 60%;
+    }
+}
+
+/*=== Laptop S ===*/
+@media all and (max-width: 1024px) {
+    .header-phone {
+        margin: 0 0 -310px 29.933%;
+    }
+
+    li .main-img {
+        margin: 50px 66.333%;
+    }
+
+    input[type="email"] {
+        margin: 40px 214px 0;
+    }
+
+    .input-block > button {
+        margin: -45px 549px;
+    }
+
+    .pro {
+        margin: 30px 0;
+    }
+
+    .block-left {
+        width: 35%;
+    }
+    .footer-top .container .block-right {
+        width: 65%;
+    }
+        .phone-img-banner {
+            margin-left: -420px;
+        }
+        .map-img-banner {
+            margin-left: 0;
+        }
+}
+
+/*=== Tablet L ===*/
+@media all and (max-width: 840px) {
+    .row {
+        flex-direction: column;
+        padding-top: 25px;
+    }
+    .features-phone .row .block-left {
+        flex-direction: column-reverse;
+    }
+    .banner .container h1, p {
+        padding: 20px 0 15px;
+    }
+    .phone-img-banner {
+        margin-left: 30px;
+        padding-top: 50px;
+    }
+    header .navbar .nav-links {
+        display: none;
+    }
+    .header-phone {
+        margin: 0 0 -310px 24.933%;
+    }
+    .features-phone > .row {
+        flex-direction: column-reverse;
+    }
+    li .main-img {
+        margin: 50px 43.333%;
+    }
+    .phone-img-banner {
+        margin: 0 0 0 -500px;
+    }
+    input[type="email"] {
+        margin: 40px 122px 0;
+    }
+    .input-block > button {
+        margin: -45px 456px;
+    }
+    .footer-top .block-left img {
+        padding-top: 20px;
+    }
+    .footer-top .widget-nav {
+        padding-top: 15px;
+    }
+    .block-left {
+        padding-top: 0;
+        width: 35%;
+    }
+    .block-right {
+        padding-top: 0;
+        width: 50px;
+    }
+    .plan .row .block-right {
+        padding-top: 30px;
+    }
+    .phone-img-banner {
+        margin-left: 42px;
+        width: 180%;
+    }
+    .footer-top .block-left {
+        width: auto;
+    }
+    .footer-top .container .block-right {
+        width: auto;
+    }
+    #toggler-hid {
+        display: block;
+    }
+}
+
+/*=== Tablet S ===*/
+@media all and (max-width: 780px) {
+    .header-phone {
+        margin: 0 0 -310px 21.933%;
+    }
+    li .main-img {
+        margin: 50px 34.333%;
+    }
+    input[type="email"] {
+        margin: 40px 92px 0;
+    }
+    .input-block > button {
+        margin: -45px 427px;
+    }
+    .row > .block-right {
+        margin: auto;
+    }
+
+}
+
+/*=== Phone XL*/
+@media all and (max-width: 575px) {
+    .container {
+        margin: 0 15px;
+    }
+
+    .header-phone {
+        margin: 0 0 -310px 13.933%;
+    }
+
+    .features .block-left {
+        width: 100%;
+        padding-top: 0;
+    }
+    .features .block-right {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .phone-img-banner {
+        width: 127%;
+    }
+    .map-img-banner {
+        width: 190%;
+    }
+
+    .heading {
+        margin-top: 0;
+    }
+
+    .screenshots li:nth-child(3) {
+        width: 34%;
+    }
+
+    input[type="email"] {
+        margin: 40px 76px 0;
+        width: 370px;
+    }
+    .input-block > button {
+        margin: -45px 280px;
+    }
+
+    .row {
+        flex-direction: unset;
+    }
+}
+
+/*=== Phone L ===*/
+@media all and (max-width: 479px) {
+    .container {
+        margin: 0 25px;
+        overflow: hidden;
+    }
+
+    .header-phone {
+        display: none;
+    }
+
+    .phone-img-banner {
+        width: 93%;
+    }
+    .map-img-banner {
+        width: 160%
+    }
+
+    .heading {
+        padding-top: 50px;
+    }
+
+    li .main-img {
+        margin: 50px 6.333%;
+    }
+    .screenshots li:nth-child(2) {
+        margin: 138px 50px 100px -532px;
+    }
+    .screenshots li:last-child {
+        margin: 135px -533px 100px 50px;
+    }
+
+    input[type="email"] {
+        margin: 40px 36px 0;
+    }
+    .input-block > button {
+        margin: -45px 273px;
+        width: 43px;
+    }
+
+    .footer-bottom .container h4 {
+        margin-bottom: 15px;
+    }
+}
+
+/*=== Phone S ===*/
+@media all and (max-width: 420px) {
+    .container {
+        margin: 0;
+    }
+    .banner .container p {
+        margin: 0;
+    }
+
+    .phone-img-banner {
+        margin-left: -20px;
+    }
+
+    .btn-01 {
+        width: 186px;
+        height: 40px;
+        margin: 40px 7px 0 0;
+    }
+    .fa-arrow-right {
+        margin: 0 0 -4px 17px;
+    }
+
+    .row > .block-right {
+        padding: 0 15px 0 15px;
+    }
+    .row > .block-right {
+        padding: 0 15px 0 15px;
+    }
+
+    li .main-img {
+        margin: 50px 40.333%;
+        width: 180%;
+    }
+
+    input[type="email"] {
+        margin: 40px 48px 0;
+        width: 285px;
+    }
+    .input-block > button {
+        margin: -45px 283px;
+        width: 43px;
+    }
+    .input-block button > a {
+        display: none;
+    }
+    .input-block button > i {
+        margin-left: 15px;
+        margin-bottom: 1px;
+    }
+    #plug {
+        height: 600px;
+    }
+}

@@ -1,0 +1,72 @@
+/*=== Slider ===*/
+.slider-section {
+    background-color: rgba(244, 195, 204, 1);
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 92px;
+    position: relative;
+    &__carousel {
+        width: 100%;
+        // padding: 5%;  
+    }
+    &__item {
+        width: 30%;
+        margin-bottom: 135px;
+        margin-left: 45px; 
+    }
+
+    &__image {
+        // height: 260px;
+        // width: 390px;
+        margin-bottom: 30px;
+        @include desktop-l {
+
+        }
+    }
+
+    &__btn {
+        color: rgba(239, 51, 64, 1);
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 30px;
+        height: 30px;
+        width: 102px;
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 14px;
+        letter-spacing: 2.08px;
+
+        margin-bottom: 14px;
+    }
+
+    &__title {
+        right: 30.77%;
+        top: 43.91px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 34px;
+        letter-spacing: 4.16px;
+        color: rgba(0, 0, 0, 1);
+
+        margin-bottom: 18px;
+    }
+
+    &__link {
+        height: 15px;
+        top: -2px;
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 15px;
+
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 1);
+
+        cursor: pointer;
+    }
+}
+/*=== / Slider ===*/

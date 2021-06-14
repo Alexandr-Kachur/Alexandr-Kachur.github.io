@@ -1,0 +1,59 @@
+/*=== Global ===*/
+.events-section {
+    &__block {
+        // margin-left: 40px;
+        margin-left: 160px;
+        margin-right: 160px;
+        margin-top: 144px;
+        // margin-bottom: 155px;
+    }
+
+    &__item {
+        margin-bottom: 144px;
+        transition: .15s;
+        &:hover {
+            // box-shadow: 0 0 30px rgba(7, 7, 7, 0.692);
+            transform: translateY(-5px) scale(1.025);
+        }
+    }
+    &__title {
+        margin-top: 127px;
+        margin-bottom: 144px;
+        margin-left: 160px;
+
+        padding-left: 40px;
+        
+        height: 85px;
+        // width: 281px;
+        left: 3.33%;
+        right: 73.92%;
+        top: 72.91px;
+        
+        font-size: 53px;
+        line-height: 84px;
+        letter-spacing: 7.65px;
+        
+        color: rgba(0, 0, 0, 1);
+    }
+    &__image {
+        padding-bottom: 69px;
+        padding-left: 40px;
+        cursor: pointer;
+        @include desktop-m {
+            height: 465px;
+        }
+    }
+    &__text {
+        height: 36px;
+        right: 51.89%;
+        top: 583.66px;
+
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: 4.8px;
+
+        color: rgba(0, 0, 0, 1);
+        cursor: pointer;
+    }
+}
+/*=== / Global ===*/

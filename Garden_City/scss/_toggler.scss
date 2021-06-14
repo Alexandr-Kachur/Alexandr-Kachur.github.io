@@ -1,0 +1,12 @@
+.toggle {
+    &__menu {
+        &--hidden  {
+            display: none;
+        }
+        &--active {
+            @include tablet-portrait-xl {
+                display: block;
+            }
+        }
+    }
+}

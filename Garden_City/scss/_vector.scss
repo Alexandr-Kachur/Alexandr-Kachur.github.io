@@ -1,0 +1,31 @@
+.vector {
+    &__vector-1 {
+        top: 0;
+        right: 0;
+        position: absolute;
+    }
+    &__vector-2 {
+        right: 0;
+        bottom: 0;
+        position: absolute;
+    }
+    &__vector-3 {
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        bottom: -38px;
+        z-index: 1;
+    }
+    &__vector-4 {
+        right: 12%;
+        position: absolute;
+    }
+    &__vector-5 {
+        right: 15%;
+        position: absolute;
+    }
+    &__vector-6 {
+        right: 0;
+        position: absolute;
+    }
+}

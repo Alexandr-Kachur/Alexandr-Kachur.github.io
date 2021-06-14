@@ -1,0 +1,67 @@
+// === FONTS ===
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+// === \ FONTS ===
+
+// === VARIABLES ===
+$font-stack: 'Roboto', sans-serif;
+
+$primary-color:  rgba(255, 255, 255, 1);
+$primary-bg-color: rgba(255, 244, 240, 1);
+// === / VARIABLES === 
+
+// === MIXINS ===
+// large desktop
+@mixin large-desktop {
+    @media (max-width: 1920px)
+    { @content; }
+}
+
+// desctop
+@mixin desktop-xl {
+    @media (max-width: 1600px)
+    { @content; }
+}
+@mixin desktop-l {
+    @media (max-width: 1440px)
+    { @content; }
+}
+@mixin desktop-m {
+    @media (max-width: 1366px)
+    { @content; }
+}
+@mixin desktop-s {
+    @media (max-width: 1280px)
+    { @content; }
+}
+
+// tablet
+@mixin tablet-landscape {
+    @media (max-width: 1024px)
+    { @content; }
+}
+@mixin tablet-portrait-xl {
+    @media (max-width: 768px)
+    { @content; }
+}
+@mixin tablet-portrait-l {
+    @media (max-width: 720px)
+    { @content; }
+}
+
+// phone
+
+// === / MIXINS ===
+
+// === SYLES === 
+@import 'global';
+@import 'header';
+@import 'slider';
+@import 'events';
+@import 'community';
+@import 'sponsors';
+@import 'about';
+@import 'footer';
+@import 'toggler';
+@import 'vector';
+@import 'reset';
+// === / STYLES ===

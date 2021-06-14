@@ -1,0 +1,47 @@
+.community-section {
+    background-color: rgba(255, 244, 240, 1);
+    &__banner {
+        margin: auto;
+    }
+    &__image {
+        margin: 99px 0 99px 45px;
+        @include desktop-l {
+            height: 500px;
+            
+        }
+    }
+    &__content {
+        float: right;
+        width: 517px;
+        margin-top: 170px;
+        margin-right: 108px;
+    }
+    &__title {
+        color: rgba(0, 0, 0, 1);
+        padding-bottom: 9px;
+        @include desktop-l {
+            font-size: 37px;
+            line-height: 65px;
+        }
+    }
+    &__text {
+        color: rgba(0, 0, 0, 1);
+        padding-bottom: 25px;
+        @include desktop-l {
+            font-size: 17px;
+            line-height: 30px;
+        }
+    }
+    &__button {
+        color: rgba(255, 255, 255, 1);
+        background-color: rgba(225, 107, 169, 1);
+        border-radius: 50px;
+        
+        height: 50px;
+        padding: 16px 40px 19px;
+
+        font-size: 15px;
+        line-height: 15px;
+        letter-spacing: 2.4px;
+    }
+}

@@ -1,0 +1,90 @@
+/*=== Header ===*/
+.header {
+    background-color: rgba(23, 28, 143, 1);
+    padding: 15px;
+    position: relative;
+
+    &__top {
+        margin: 0;
+    }
+    &__logo {
+        padding-top: 30px;
+        padding-left: 45px;
+    }
+    &__menu {
+        float: right;
+        padding-top: 39px;
+        padding-right: 159px - 45px;
+        margin-right: 111px;
+    }
+    &__content{
+        margin: 0;
+    }
+}
+
+.banner {
+    display: flex;
+    justify-content: space-evenly;
+    &__image {
+        padding-top: 36.3px;
+        padding-left: 45px;
+        padding-bottom: 45px;
+        margin: 0;
+        @include desktop-l {
+            height: 500px;
+            margin-left: 15px;
+        }
+    }
+
+    &__title {
+        color: rgba(215, 185, 228, 1);
+        padding-bottom: 17px;
+        // max-width: 414px;
+        @include desktop-l {
+            font-size: 37px;
+            line-height: 65px;
+        }
+    }
+    &__text {
+        padding-bottom: 20px;
+        max-width: 338px;
+        @include desktop-l {
+            font-size: 17px;
+            line-height: 30px;
+            
+        }
+    }
+    &__content {
+        max-width: 554.5px;
+        padding-top: 91.6px;
+        padding-left: 68px;
+        float: right;
+    }
+}
+
+.radio-btn {
+    height: 155px;
+    width: 160px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+    border-radius: 50%;
+    background: rgba(251, 217, 101, 1);
+    @include desktop-l {
+        height: 100px;
+        width: 100px;
+    }
+
+    &__img {
+        @include desktop-l {
+            height: 115px;
+            width: 115px;
+        }
+    }
+}
+/*=== / Header ===*/
